@@ -4,13 +4,20 @@
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 		</view>
+		<meet-line :settings="settings" :data="list"></meet-line>
 	</view>
 </template>
-
 <script>
 	export default {
 		data() {
 			return {
+				settings:{
+					
+				},
+				list:[{
+					name:"测试",
+					value: 23,
+				}],
 				title: 'Hello'
 			}
 		},
